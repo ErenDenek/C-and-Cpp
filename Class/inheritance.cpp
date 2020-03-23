@@ -7,6 +7,16 @@ class selectClass{
 	public:
 		int select;
 		
+		int sum(int nb1, int nb2)
+		{
+			return nb1+nb2;
+		}
+		
+		int diff(int nb1, int nb2)
+		{
+			return nb1-nb2;
+		}
+		
 };
 
 
@@ -14,8 +24,8 @@ class generalClass: public selectClass{
 	public:
 		int basicMath(int x, int y)
 		{
-			if(select == 0) return x+y;
-			if(select == 1) return x-y;
+			if(select == 0) return sum(x,y);
+			if(select == 1) return diff(x,y);
 		}
 	
 };
