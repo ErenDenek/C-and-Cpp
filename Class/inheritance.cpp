@@ -3,14 +3,14 @@
 using namespace std;
 
 
-class select{
+class selectClass{
 	public:
 		int select;
 		
 };
 
 
-class generalClass: public select{
+class generalClass: public selectClass{
 	public:
 		int basicMath(int x, int y)
 		{
@@ -24,10 +24,11 @@ int main()
 {
 	generalClass operation;
 	
-	operation.select = 0;
+	operation.select = 1;
 	
 	int result = operation.basicMath(2,3);
 	
+		
 	cout << result;
 	return 0;
 }
