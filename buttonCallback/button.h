@@ -22,8 +22,5 @@ void buttonControlEvent(BUTTON_ITEM_TS* button_item);
 
 void buttonCreate(BUTTON_ITEM_TS* button_item, char* _buttonName, BUTTON_EVENT_TYPE_TE _buttonEventType, buttonEvent_t _buttonEventCallback);
 
-//Buton nesnesi ekleme
-extern BUTTON_ITEM_TS myButton;
-
 #endif // BUTTON_H
 
