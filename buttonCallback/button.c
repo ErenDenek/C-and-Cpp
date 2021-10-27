@@ -10,8 +10,8 @@ const BUTTON_EVENT_TYPE_TE _buttonEventType,
 const buttonEvent_t _buttonEventCallback )
 {
     button_item->buttonName 			= _buttonName;
-    button_item->buttonEventType 	= _buttonEventType;
-    button_item->buttonEventCallback = _buttonEventCallback;
+    button_item->buttonEventType 	    = _buttonEventType;
+    button_item->buttonEventCallback    = _buttonEventCallback;
 
     printf("===================Buton ozellikleri===================\n");
     printf("Button name : %s\n", button_item->buttonName), printf("Button event type : %d\n", button_item->buttonEventType);
