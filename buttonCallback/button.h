@@ -18,9 +18,16 @@ typedef struct{
 }BUTTON_ITEM_TS;
 
 
-void buttonControlEvent(BUTTON_ITEM_TS* button_item);
 
-void buttonCreate(BUTTON_ITEM_TS* button_item, char* _buttonName, BUTTON_EVENT_TYPE_TE _buttonEventType, buttonEvent_t _buttonEventCallback);
+
+void buttonCreate( 
+BUTTON_ITEM_TS* button_item, 
+const char* _buttonName, 
+const BUTTON_EVENT_TYPE_TE _buttonEventType, 
+const buttonEvent_t _buttonEventCallback);
+
+void buttonControlEvent( const BUTTON_ITEM_TS* button_item);
 
 #endif // BUTTON_H
+
 
