@@ -13,7 +13,7 @@ const buttonEvent_t _buttonEventCallback )
     button_item->buttonEventType 	= _buttonEventType;
     button_item->buttonEventCallback = _buttonEventCallback;
 
-	printf("===================Buton ozellikleri===================\n");
+    printf("===================Buton ozellikleri===================\n");
     printf("Button name : %s\n", button_item->buttonName), printf("Button event type : %d\n", button_item->buttonEventType);
     printf("===================Buton Simulasyon kullanimi=====================\n");
     printf("Butona tiklama icin 0 degerini giriniz\n");
