@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "button.h"
 
+//Buton nesnesi ekliyoruz
+//Her farklÄ± buton iÃ§in burada nesne oluÅŸturmamÄ±z gerekiyor.
+//Her farklÄ± buton iÃ§in buttonCreate fonksiyonunu kullanarak Ã¶zellik atamasÄ± yapmamÄ±z gerekiyor.
 BUTTON_ITEM_TS myButton;
 
 void userButtonClickedCallBack(void)
@@ -13,11 +16,11 @@ void userButtonClickedCallBack(void)
 
 int main(int argc, char *argv[]) {
 
-	// Oluşturduğumuz button nesnesine özellikler atıyoruz.
+	// OluÅŸturduÄŸumuz button nesnesine Ã¶zellikler atÄ±yoruz.
 	buttonCreate(&myButton, "myButton", BUT_CLICKED, &userButtonClickedCallBack);
 	
-	/* Bu while döngüsü genellikle arayüz tarafından nesneleri kontrol etmek için kullanılır.
-	   Kullanıcı tarafından dikkate alınmaz.	
+	/* Bu while dÃ¶ngÃ¼sÃ¼ genellikle arayÃ¼z tarafÄ±ndan nesneleri kontrol etmek iÃ§in kullanÄ±lÄ±r.
+	   KullanÄ±cÄ± tarafÄ±ndan dikkate alÄ±nmaz.	
 	*/
 	while(1)
 	{
