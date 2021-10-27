@@ -17,9 +17,6 @@ typedef struct{
     buttonEvent_t buttonEventCallback;
 }BUTTON_ITEM_TS;
 
-
-
-
 void buttonCreate( 
 BUTTON_ITEM_TS* button_item, 
 const char* _buttonName, 
