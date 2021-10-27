@@ -9,8 +9,8 @@ const char* _buttonName,
 const BUTTON_EVENT_TYPE_TE _buttonEventType, 
 const buttonEvent_t _buttonEventCallback )
 {
-    button_item->buttonName 			= _buttonName;
-    button_item->buttonEventType 	    = _buttonEventType;
+    button_item->buttonName             = _buttonName;
+    button_item->buttonEventType        = _buttonEventType;
     button_item->buttonEventCallback    = _buttonEventCallback;
 
     printf("===================Buton ozellikleri===================\n");
